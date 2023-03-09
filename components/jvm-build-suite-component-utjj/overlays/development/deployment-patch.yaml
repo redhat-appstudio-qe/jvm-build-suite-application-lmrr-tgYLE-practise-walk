@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-utjj
+  namespace: jvm-build-otwe-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:c3430824fa10becfe68bb86c9b3722572bc47d071c56578b5114778476adc52b
+        name: container-image
+        resources: {}
+status: {}
